@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.aw-main-banner {
+  display: block;
+  width: 100%;
+}
+.aw-logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 26px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  border: solid 3px #fff;
+  border-radius: 100%;
+}
