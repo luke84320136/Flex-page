@@ -4,10 +4,25 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-nav {
+a {
+  text-decoration: none;
+}
+
+header nav {
   position: fixed;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
+}
+
+header nav ul.aw-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul.aw-navigation li a {
+  display: block;
+  color: white;
+  font-size: 20px;
 }
 
 .aw-main-banner {
