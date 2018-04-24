@@ -8,19 +8,39 @@ a {
   text-decoration: none;
 }
 
+.aw-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.aw-align-center {
+  align-items: center;
+}
+
+/* Header */
+
 header nav {
   position: fixed;
+  padding: 10px 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
 
 header nav ul.aw-navigation {
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 header nav ul.aw-navigation li a {
   display: block;
+  padding: 0 16px;
   color: white;
   font-size: 20px;
 }
@@ -29,14 +49,17 @@ header nav ul.aw-navigation li a {
   display: block;
   width: 100%;
 }
+
+/* Logo */
+
 .aw-logo {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
   color: white;
   font-size: 26px;
-  line-height: 60px;
-  text-align: center;
   text-decoration: none;
   border: solid 3px #fff;
   border-radius: 100%;
