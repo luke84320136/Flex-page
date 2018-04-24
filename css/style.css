@@ -45,6 +45,26 @@ header nav ul.aw-navigation li a {
   font-size: 20px;
 }
 
+header nav ul.aw-navigation li:last-child a {
+  padding-right: 0;
+}
+
+header nav ul.aw-navigation li a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+header nav ul.aw-navigation li a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
 .aw-main-banner {
   display: block;
   width: 100%;
