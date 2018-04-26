@@ -151,6 +151,27 @@ header nav ul.aw-navigation li a:hover::after {
   padding: 85px 0;
 }
 
+/* Gallery */
+#aw-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#aw-gallery li {
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#aw-gallery li img {
+  display: block;
+  width: 100%;
+}
+
 /* About */
 #aw-about .aw-column {
   width: 45%;
