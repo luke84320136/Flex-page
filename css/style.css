@@ -265,8 +265,12 @@ header nav ul.aw-navigation li a:hover::after {
   border: solid #eee;
   border-width: 0 3px 3px 0;
   cursor: pointer;
-  -webkit-transition: opcaity 0.3s ease;
-  transition: opacity 0.5s ease;
+  -webkit-transition: border-color .5s ease;
+  transition: border-color .5s ease;
+}
+
+.aw-testimonials .aw-arrow:hover {
+  border-color: #dca456;
 }
 
 .aw-testimonials .aw-arrow.aw-arrow-left {
