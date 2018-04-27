@@ -198,7 +198,7 @@ header nav ul.aw-navigation li a:hover::after {
 
 #aw-gallery li:hover:after {
   width: 0;
-  height: 0;  
+  height: 0;
 }
 
 /* About */
@@ -211,6 +211,49 @@ header nav ul.aw-navigation li a:hover::after {
 #aw-about i {
   font-size: 45px;
   color: #dca456;
+}
+
+/* Testimonials */
+#aw-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aw-testimonials {
+  max-width: 500px;
+}
+
+.aw-testimonials ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.aw-testimonials ul li {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aw-testimonials ul li .aw-user-data img {
+  border-radius: 100%;
+}
+
+.aw-testimonials ul li .aw-user-data .aw-user-name {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.aw-testimonials ul li > p {
+  font-style: italic;
+  font-size: 20px;
+  color: gray;
+  text-align: center;
 }
 
 /* Animations */
