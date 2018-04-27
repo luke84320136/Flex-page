@@ -221,6 +221,7 @@ header nav ul.aw-navigation li a:hover::after {
 }
 
 .aw-testimonials {
+  position: relative;
   max-width: 500px;
 }
 
@@ -254,6 +255,30 @@ header nav ul.aw-navigation li a:hover::after {
   font-size: 20px;
   color: gray;
   text-align: center;
+}
+
+.aw-testimonials .aw-arrow {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  padding: 25px;
+  border: solid #eee;
+  border-width: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: opcaity 0.3s ease;
+  transition: opacity 0.5s ease;
+}
+
+.aw-testimonials .aw-arrow.aw-arrow-left {
+  right: 120%;
+  -webkit-transform:  rotate(135deg);
+  transform:  rotate(135deg);
+}
+
+.aw-testimonials .aw-arrow.aw-arrow-right {
+  left: 120%;
+  -webkit-transform:  rotate(-45deg);
+  transform:  rotate(-45deg);
 }
 
 /* Animations */
