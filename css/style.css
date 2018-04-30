@@ -265,8 +265,8 @@ header nav ul.aw-navigation li a:hover::after {
   border: solid #eee;
   border-width: 0 3px 3px 0;
   cursor: pointer;
-  -webkit-transition: border-color .5s ease;
-  transition: border-color .5s ease;
+  -webkit-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease;
 }
 
 .aw-testimonials .aw-arrow:hover {
@@ -275,14 +275,40 @@ header nav ul.aw-navigation li a:hover::after {
 
 .aw-testimonials .aw-arrow.aw-arrow-left {
   right: 120%;
-  -webkit-transform:  rotate(135deg);
-  transform:  rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .aw-testimonials .aw-arrow.aw-arrow-right {
   left: 120%;
-  -webkit-transform:  rotate(-45deg);
-  transform:  rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* contact */
+#aw-content {
+  background: #f8f8f8;
+}
+
+#aw-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;  
+}
+
+#aw-content form input:not([type='submit']),
+#aw-content form textarea {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: solid 1px #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#aw-content form textarea {
 }
 
 /* Animations */
