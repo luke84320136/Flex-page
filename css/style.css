@@ -63,9 +63,16 @@ header {
 header nav {
   position: fixed;
   padding: 10px 0;
+  margin: 10px 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header nav.aw-nav-fixed {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 header nav ul.aw-navigation {
