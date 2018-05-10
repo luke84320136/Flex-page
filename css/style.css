@@ -1,5 +1,4 @@
 @import 'fonts.css';
-
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
   font-family: 'Noto Sans TC', sans-serif;
@@ -66,8 +65,8 @@ header nav {
   margin: 10px 0;
   width: 100%;
   z-index: 999;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 header nav.aw-nav-fixed {
@@ -158,11 +157,13 @@ header nav ul.aw-navigation li a:hover::after {
 }
 
 /* Sections */
+
 .aw-section {
   padding: 85px 0;
 }
 
 /* Gallery */
+
 #aw-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +210,7 @@ header nav ul.aw-navigation li a:hover::after {
 }
 
 /* About */
+
 #aw-about .aw-column {
   width: 45%;
   margin-top: 25px;
@@ -221,6 +223,7 @@ header nav ul.aw-navigation li a:hover::after {
 }
 
 /* Testimonials */
+
 #aw-testimonials {
   display: flex;
   flex-direction: column;
@@ -257,7 +260,7 @@ header nav ul.aw-navigation li a:hover::after {
   margin: 10px;
 }
 
-.aw-testimonials ul li > p {
+.aw-testimonials ul li>p {
   font-style: italic;
   font-size: 20px;
   color: gray;
@@ -293,6 +296,7 @@ header nav ul.aw-navigation li a:hover::after {
 }
 
 /* contact */
+
 #aw-contact {
   background: #f8f8f8;
 }
@@ -361,6 +365,7 @@ header nav ul.aw-navigation li a:hover::after {
 }
 
 /* Footer */
+
 footer {
   padding: 10px 0;
   background-color: #444;
@@ -393,6 +398,7 @@ footer .aw-social-icons li a:hover {
 }
 
 /* Animations */
+
 .aw-animation {
   -webkit-animation: animation 3s ease-in-out;
   -webkit-animation-iteration-count: infinite;
