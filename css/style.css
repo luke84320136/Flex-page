@@ -344,13 +344,45 @@ header nav ul.aw-navigation li a:hover::after {
   font-size: 16px;
   cursor: pointer;
   outline: none;
-  -webkit-transition: all .5s  ease;
-  transition: all .5s  ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #aw-content input[type='submit']:hover {
   color: #f5f5f5;
   box-shadow: inset 0 -3px 0 0 #a27c47;
+}
+
+/* Footer */
+footer {
+  padding: 10px 0;
+  background-color: #444;
+}
+
+footer .aw-logo {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+}
+
+footer .aw-social-icons {
+  display: flex;
+  list-style-type: none;
+}
+
+footer .aw-social-icons li {
+  margin-left: 15px;
+}
+
+footer .aw-social-icons li a {
+  display: flex;
+  color: #fff;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+footer .aw-social-icons li a:hover {
+  opacity: 0.5;
 }
 
 /* Animations */
