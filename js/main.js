@@ -7,8 +7,14 @@
     const nav = document.querySelector('header nav');
 
     if (pageWidth > mobileWidth) {
-      bodyOffset > 0 ? nav.classList.add('aw-nav-fixed') : nav.classList.remove('aw-nav-fixed');
+      bodyOffset > 0
+        ? nav.classList.add('aw-nav-fixed')
+        : nav.classList.remove('aw-nav-fixed');
     }
+  };
+
+  const onNavItemClick = () => {
+    const navItemList = document.querySelectorAll('aw-section-link');
   };
 
   window.addEventListener('scroll', () => {
