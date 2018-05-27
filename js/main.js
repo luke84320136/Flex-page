@@ -31,10 +31,11 @@
   const scrollToSection = sectionId => {
     let sectionPosition, sectionOffset;
     const navigationHeight = document.querySelector('header nav').offsetHeight;
+    const pageWidth = window.innerWidth;
 
     if (sectionId !== '#') {
       sectionOffset = document.querySelector(sectionId).offsetTop;
-      sectionPosition = sectionOffset - navigationHeight;
+      sectionPosition = pageWidth > mobileWidth ? sectionOffset - navigationHeight : sectionOffset;
     } else {
       sectionPosition = 0;
     }
