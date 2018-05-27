@@ -2,11 +2,14 @@
   const mobileWidth = 600;
   const addMenuBackground = () => {
     const pageWidth = window.innerWidth;
-    const bodyOffset = document.body.scrollTop || document.documentElement.scrollTop;
+    const bodyOffset =
+      document.body.scrollTop || document.documentElement.scrollTop;
     const nav = document.querySelector('header nav');
 
     if (pageWidth > mobileWidth) {
-      bodyOffset > 0 ? nav.classList.add('aw-nav-fixed') : nav.classList.remove('aw-nav-fixed');
+      bodyOffset > 0 ?
+        nav.classList.add('aw-nav-fixed') :
+        nav.classList.remove('aw-nav-fixed');
     }
   };
 
@@ -19,16 +22,29 @@
         event.preventDefault();
 
         const sectionId = event.target.getAttribute('href') || event.target.dataset.href;
-        console.log(sectionId);
 
-        scrollToSection();
-      })
-    })
+        scrollToSection(sectionId);
+      });
+    });
   };
 
-  const scrollToSection = () => {
+  const scrollToSection = sectionId => {
+    let sectionPosition, sectionOffset;
+    const navigationHeight = document.querySelector('header nav').offsetHeight;
 
-  }
+    if (sectionId !== '#') {
+      sectionOffset = document.querySelector(sectionId).offsetTop;
+      sectionPosition = sectionOffset - navigationHeight;
+    } else {
+      sectionPosition = 0;
+    }
+
+    window.scrollTo({
+      behavior: 'smooth',
+      left: 0,
+      top: sectionPosition
+    });
+  };
 
   window.addEventListener('scroll', () => {
     addMenuBackground();
