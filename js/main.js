@@ -13,6 +13,7 @@
     }
   };
 
+  // click nav items
   const onNavItemClick = () => {
     const navItemList = document.querySelectorAll('.aw-section-link');
     const navItems = [...navItemList];
@@ -28,6 +29,7 @@
     });
   };
 
+  // 移動到section
   const scrollToSection = sectionId => {
     let sectionPosition, sectionOffset;
     const navigationHeight = document.querySelector('header nav').offsetHeight;
