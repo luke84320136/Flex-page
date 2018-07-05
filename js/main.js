@@ -49,8 +49,27 @@
     });
   };
 
+  // slide動作
+  const onTestimonialChange = () => {
+    let firstChild, lastChild;
+    let prevArrow = document.querySelector('#aw-testimonials-prev')
+    let nextArrow = document.querySelector('#aw-testimonials-next')
+    let testimonials = document.querySelector('.aw-testimonials ul');
+    // add eventlistener
+    document.addEventListener('click', () => {
+      if (event.target === prevArrow) {
+        lastChild = testimonials.lastElementChild;
+        testimonials.insertAdjacentElement('afterbegin', lastChild);
+      } else if (event.target === nextArrow) {
+        firstChild = testimonials.firstElementChild;
+        testimonials.insertAdjacentElement('beforeend', firstChild);
+      }
+    })
+  }
+
   window.addEventListener('scroll', () => {
     addMenuBackground();
   });
   onNavItemClick();
+  onTestimonialChange();
 })();
